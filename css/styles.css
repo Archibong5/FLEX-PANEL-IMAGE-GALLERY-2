@@ -1,0 +1,87 @@
+html{
+  background: #FFED00;
+  font-size: 20px;
+  font-weight: 600;
+  font-style:'Oregano', cursive;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  margin: 0;
+}
+
+.panels{
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.panel{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition:
+             font-size 1s ease-in-out,
+             flex 1s ease-in-out,
+             background 2s;
+background-size: cover;
+background-position: center;
+}
+
+.panel p{
+  width: 100%;
+  flex-grow: 1;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.panel > * {
+  margin: 0;
+  transition: transform 5s;
+}
+
+.panel > *:first-child{
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child{
+  transform: translateY(0);
+}
+
+.panel > *:last-child{
+  transform: translateY(100%);
+}
+
+
+.panel.open-active > *:last-child{
+  transform: translateY(0);
+}
+
+.panel.open{
+  flex: 5;
+  font-size: 30px;
+}
+
+.panel1{
+background: url(https://images.luxuryescapes.com/q_auto:good/povojkrhaabesud7xlu.jpeg);
+}
+
+.panel2{
+background: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/397483443.jpg?k=4c09f5cfbde876a466a31d36ce365384e3aa89059bbd1ba971281f06b534e578&o=&hp=1);
+}
+
+.panel3{
+background: url(https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/12/HERO__W-Maldives-18.jpg?w=2200&h=880&crop=1);
+}
+
+.panel4{
+background: url(https://travellersworldwide.com/wp-content/uploads/2022/05/shutterstock_1938868960-2.png.webp);
+}
+
+.panel5{
+background: url(https://www.usnews.com/object/image/00000178-cdc4-dce3-a1fb-cde5fc990000/waldorf-astoria-maldives-ithaafushi-three-bedroom-overwater-villa-terrace.jpg?update-time=1618359942309&size=responsive640)
+}
